@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="./timer.js" type="text/javascript"></script> 
+
+    <link rel="stylesheet" href="timer.css">
+
+    <title>Document</title>
+    </head>
+    <body>
+        <h1>Timer app</h1>
+        <div class ="container">
+            <div class ="form">
+                <table>
+                    <tr>
+                        <td>Ramp up, min</td>
+                        <td>Boiling, h</td>
+                        <td>Quenching time</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" id="timeTillBoiling" value="50"/>
+                        </td>
+                        <td>
+                            <input type="text" id="totalBoilingTime" value="30"/>
+                        </td>
+                        <td>
+                            <input type="datetime-local" id="offDayTime"/>
+                        </td>
+                        <td>
+                            <input type="button" value="Submit" onClick="display()"/>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <table>
+                    <tr>
+                        <td>On time:</td>
+                        <td id="on"></td>
+                    </tr>
+                </table>
+            </div>
+            <div></div>
+            </div>
+        </div>
+    </body>
